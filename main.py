@@ -22,6 +22,8 @@ if b!="":
   proc = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
 
 
+#converttoPDF : check if this works: https://github.com/josch/img2pdf
+
 #main command
 #java -jar GoogleBooksDownloader.jar "http://books.google.com/...id=sdf?asdfsdf..."  "/location/where/you/want/to/save/your/file/"
 
