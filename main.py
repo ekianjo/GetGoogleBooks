@@ -17,7 +17,7 @@ b=PyZenity.GetText("Please paste the path of the Google book to download","URL h
 #check internet connection too
 
 if b!="":
-  cmd = 'java -jar GoogleBooksDownloader.jar {0} "BOOKS"'.format(b)
+  cmd = 'java -jar GoogleBooksDownloader.jar {0} BOOKS/'.format(b)
   #cmd = 'zenity --progress --text="Backing Up Games Saves..." --auto-close'
   proc = subprocess.Popen(cmd, shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
 
